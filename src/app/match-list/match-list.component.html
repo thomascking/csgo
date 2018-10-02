@@ -1,0 +1,8 @@
+<div>
+  <h2>Here are the latest MatchResult: </h2>
+  <ul>
+    <li *ngFor="let result of results">
+      <a routerLink="match/{{ result.id }}">{{ result.team1.name }} vs {{ result.team2.name }}</a>
+    </li>
+  </ul>
+</div>

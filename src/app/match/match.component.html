@@ -1,0 +1,9 @@
+<div *ngIf="match">
+  <h2>{{ match.team1.name }} v. {{ match.team2.name }}<span *ngIf="match.additionalInfo">*</span></h2>
+  <h4>{{ match.event.name }}</h4>
+  <p>Format: {{ match.format }}</p>
+  <ul>
+    <li *ngFor="let map of match.maps"><span>{{ map.name }}</span><span>{{ map.result }}</span></li>
+  </ul>
+  <p>{{ match.additionalInfo }}</p>
+</div>
